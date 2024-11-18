@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Krishna Pydipalli | JS</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div id="company" class="nav-left" onmouseenter="changeCompany()" onmouseout="normal()">
+               My Company
+            </div>
+            <div class="nav-right">
+                <ul>
+                    <li class="revenue">Revenue</li>
+                    <li class="sales">Sales</li>
+                    <li class="customers">Customers</li>
+                    <li class="reports">Reports</li>
+                    <li class="settings">Settings</li>
+                </ul>
+            </div>
+            <div class="dark-theme" onclick=darkTheme() ondblclick="lightTheme()">
+                Dark Theme
+            </div>
+            <div id="loginBtn">
+                Login
+            </div>
+            <!-- <button id="add-border">Add Border</button> -->
+
+          
+
+        </nav>
+    </header>
+    <div class="login-modal" id="loginSection">
+        <h3 class="loginTitle">Login</h3>
+        <div id="closeBtn">close</div>
+        <input type="email" placeholder="Enter your email"><br>
+        <input type="password" placeholder="Enter your password"><br>
+        <button id="loginSubmit">Submit</button>
+    </div>
+    <div class="sidenav">
+        <ul>
+            <li>Dashboard</li>
+            <li class="revenue">Revenue</li>
+            <li class="sales">Sales</li>
+            <li class="customers">Customers</li>
+            <li class="reports">Reports</li>
+            <li class="meetings">Meetings</li>
+            <li class="events">Events</li>
+            <li class="settings">Settings</li>
+        </ul>
+    </div>
+
+    <div class="main">
+        <div class="section revenue" onmouseover="eleHover(this)" onmouseout="eleOut(this)">
+            <h2>Revenue</h2>
+            <p>Revenue definition is the total amount of money measured over a set amount of time.</p>
+        </div>
+        <div class="section sales" onmouseover="eleHover(this)" onmouseout=" eleOut(this)">
+            <h2>Sales</h2>
+            <p>Sales are activities related to selling or the number of goods sold in a given targeted time period.</p>
+        </div>
+        <div class="section" onmouseover="eleHover(this)" onmouseout=" eleOut(this)">
+            <h2 class="customers">Customers</h2>
+            <p>A customer is a person or business that buys goods or services from another business.</p>
+        </div>
+        <div class="section reports" onmouseover="eleHover(this)" onmouseout=" eleOut(this)">
+            <h2>Reports</h2>
+            <p>A report is a specific form of writing, written concisely and clearly and typically organised</p>
+        </div>
+        <div class="section meetings" onmouseover="eleHover(this)" onmouseout=" eleOut(this)">
+            <h2>Meetings</h2>
+            <p>A meeting is when two or more people come together to discuss one or more topics.</p>
+        </div>
+        <div class="section events" onmouseover="eleHover(this)" onmouseout=" eleOut(this)">
+            <h2>Events</h2>
+            <p>An event is something that happens, especially when it is unusual or important.</p>
+        </div>
+
+
+        <script src="project.js"></script>
+</body>
+
+</html>
